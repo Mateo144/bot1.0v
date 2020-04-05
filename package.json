@@ -1,0 +1,19 @@
+{
+  "name": "bot",
+  "version": "1.0.0",
+  "description": "Techfun.site Bot pokazowy",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node index.js",
+    "dev:watch": "nodemon index.js"
+  },
+  "author": "Mateo#0947",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^11.2.1",
+    "moment": "^2.24.0",
+    "nodemon": "^2.0.2",
+    "os-utils": "0.0.14",
+    "quick.db": "^7.0.0-b22"
+  }
+}
