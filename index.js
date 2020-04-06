@@ -13,28 +13,28 @@ const bot = new Discord.Client({disableEveryone: true})
 bot.on("ready", async () => {
     console.log(`${nazwabota} jest online`)
 });
-//Wiatomosc witajaca nowych ludzi
-//bot.on('guildMemberAdd', member => {
-//    console.log('Dołaczył na serwer.')
-//    var embed = new Discord.RichEmbed()
-//    .setTitle(`${member.user.username} dołączył na serwer!`)
-//    .setDescription(`Jesteś nasza ${member.guild.memberCount} osobą na serwerze!`)
-//    .setColor(`#8AA4B7`)    
-//    member.guild.channels.get('689652413455794197').send(embed)
-//}
-//)
-//Wiadomość o opuszczeniu discorda
-//bot.on('guildMemberRemove', member => {
-//    console.log('Opuścił serwer.')
-//    var liczbaprzed = member.guild.memberCount
-//    var liczbapo = liczbaprzed+1
-//    var embed = new Discord.RichEmbed()
-//    .setTitle(`${member.user.username} opuścił na serwer!`)
-//    .setDescription(`Był nasza ${liczbapo} osobą na serwerze!`)
-//    .setColor(`#8AA4B7`)
-//    member.guild.channels.get('689652413455794197').send(embed)
-//}
-//)
+Wiatomosc witajaca nowych ludzi
+bot.on('guildMemberAdd', member => {
+    console.log('Dołaczył na serwer.')
+    var embed = new Discord.RichEmbed()
+    .setTitle(`${member.user.username} dołączył na serwer!`)
+    .setDescription(`Jesteś nasza ${member.guild.memberCount} osobą na serwerze!`)
+    .setColor(`#8AA4B7`)    
+     member.guild.channels.get('ID KANAŁU Z POWITANIAMI NA SERWER').send(embed)
+}
+)
+Wiadomość o opuszczeniu discorda
+bot.on('guildMemberRemove', member => {
+    console.log('Opuścił serwer.')
+    var liczbaprzed = member.guild.memberCount
+    var liczbapo = liczbaprzed+1
+    var embed = new Discord.RichEmbed()
+    .setTitle(`${member.user.username} opuścił na serwer!`)
+    .setDescription(`Był nasza ${liczbapo} osobą na serwerze!`)
+    .setColor(`#8AA4B7`)
+    member.guild.channels.get('ID KANAŁU Z POZEGNANIEM NA SERVER').send(embed)
+}
+)
 
 
 bot.on("message", async message => {
