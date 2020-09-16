@@ -13,7 +13,7 @@ const bot = new Discord.Client({disableEveryone: true})
 bot.on("ready", async () => {
     console.log(`${nazwabota} jest online`)
 });
-Wiatomosc witajaca nowych ludzi
+//Wiatomosc witajaca nowych ludzi
 bot.on('guildMemberAdd', member => {
     console.log('Dołaczył na serwer.')
     var embed = new Discord.RichEmbed()
@@ -23,7 +23,7 @@ bot.on('guildMemberAdd', member => {
      member.guild.channels.get('ID KANAŁU Z POWITANIAMI NA SERWER').send(embed)
 }
 )
-Wiadomość o opuszczeniu discorda
+//Wiadomość o opuszczeniu discorda
 bot.on('guildMemberRemove', member => {
     console.log('Opuścił serwer.')
     var liczbaprzed = member.guild.memberCount
